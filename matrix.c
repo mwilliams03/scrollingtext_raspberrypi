@@ -1,5 +1,4 @@
 
-
 #include <curses.h>
 #include <signal.h>
 #include <errno.h>
@@ -20,7 +19,8 @@
 #define H_DELAY 100
 #define V_DELAY 100
 
-#define VERTICAL 0
+// set this to '0' if you only want horizontal scrolling
+#define VERTICAL 1
 void selectDevice(int file, int addr);
 int mymillis();
 
